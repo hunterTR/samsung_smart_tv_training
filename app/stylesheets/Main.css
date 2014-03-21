@@ -1,0 +1,94 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* Layout */
+body
+{
+	width: 960px;
+	height: 540px;
+}
+#MainListTitles {
+    position: absolute;
+    left: 185px;
+    top: 274px;
+    width: 731px;
+    height: 210px;
+    color: #fff;
+}
+
+#MainListTitle0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle1 {
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle2 {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle3 {
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle4 {
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle5 {
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    width: 731px;
+    height: 30px;
+}
+
+#MainListTitle6 {
+    position: absolute;
+    left: 0px;
+    top: 180px;
+    width: 731px;
+    height: 30px;
+}
+
+.MainListTitle_style {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 550px;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 20px;
+    padding-top: 5px;
+}
