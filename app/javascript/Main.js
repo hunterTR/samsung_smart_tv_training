@@ -3,16 +3,14 @@ var tvKey = new Common.API.TVKeyValue();
 
 
 var mArray = ['video1','video2','video3','video4','video5','video6','video7','video8','video9','video10','video11','video12','video13','video14'];
+var mVideoArray= ["http://www.youtube.com/embed/-NawT0sF7C8?modestbranding=1&rel=0&showinfo=0&color=white&theme=light&autoplay=1","http://www.youtube.com/embed/KSlqVXit6_M?modestbranding=1&rel=0&showinfo=0&color=white&theme=light&autoplay=1","http://www.youtube.com/embed/PsmagyzZtlA?modestbranding=1&rel=0&showinfo=0&color=white&theme=light&autoplay=1"];
 
 
 var max_video_num = 14;
 var mTitleIndex= 0;
 var mVideoIndex = 0;
 var maxTitleNumber = 7;
-function SceneMain() {
-	
-	
-}
+
 
 var Main =
 {
@@ -22,7 +20,7 @@ var Main =
 
 Main.showvideolist = function(index)
 {
-				for(i = 0 ;i < maxTitleNumber ; i++)
+				for(var i = 0 ;i < maxTitleNumber ; i++)
 	{
 		if(index+i >= max_video_num)
 	{
@@ -37,22 +35,22 @@ document.getElementById("MainListTitle"+i).innerHTML = mArray[i+index - max_vide
 
 
 Main.setHighlight(mTitleIndex);
-}
+};
 Main.showVideo = function()
 {
-sf.scene.hide('Main');
-sf.scene.show('videoScene');    // pass the index of    articles and array contains article data.
- sf.scene.focus('videoScene');
+	sf.scene.hide('Main');
+	sf.scene.show('videoScene', {index: mVideoIndex});    // pass the index of articles and array contains article data.
+    sf.scene.focus('videoScene');
 
-}
+};
 Main.setHighlight = function(index)
 {
 document.getElementById("MainListTitle"+index).style.color = "#00FFFF";
-}
+};
 Main.deHighlight = function(index)
 {
 document.getElementById("MainListTitle"+index).style.color = "#FFFFFF";
-}
+};
 
 
 Main.onLoad = function()
@@ -92,10 +90,11 @@ Main.keyDown = function()
 			break;
 		case tvKey.KEY_LEFT:
 			alert("LEFT");
-			Main.showVideo();
+		main.showVideo();
 			break;
 		case tvKey.KEY_RIGHT:
 			alert("RIGHT");
+			document.getElementById("ytplayer").setAttribute("src",mVideoArray[mVideoIndex]);
 			break;
 		case tvKey.KEY_UP:
 			alert("UP");

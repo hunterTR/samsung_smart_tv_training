@@ -20,10 +20,15 @@
 
 	<body onload="Main.onLoad();" onunload="Main.onUnload();">
 
-		<!-- Dummy anchor as focus for key events -->
+		<!-- Dummy anchor as focus for key events <a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();">
+
+ -->
 		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
 
-<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();">
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+src=""
+frameborder="0" allowfullscreen></iframe>
+
 		 	<div id="MainListTitles">
    <div id="MainListTitle0">WTF</div>
    <div id="MainListTitle1">WTF</div>
