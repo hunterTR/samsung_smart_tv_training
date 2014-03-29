@@ -4,5 +4,5 @@
 
 	"changeSource" : false,
 	"theme" : "base",
-	"modules" : ["ui.*"]
+	"modules" : []
 }
